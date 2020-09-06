@@ -1,6 +1,62 @@
+
+html { 
+  background: url(massageTable.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
 	box-sizing: border-box;
 	text-align: center;
-	background-image: linear-gradient(45deg, red 0 50%, blue 50% 100%);
+	/*linear-gradient(45deg, #3f87a6 0 50%, blue 50% 100%);*/
+	background: transparent;
 	height: 700px;
+	width:60%;
+	margin: auto;
+}
+header {
+	
+	height: 200px;
+	
+}
+img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 2px solid skyblue;
+}
+main {
+	
+	color: white;
+}
+ul {
+	display: flex;
+	flex-direction: columns;
+	justify-content: space-around;
+}
+li {
+	list-style-type: none;
+	background-color: skyblue;
+	height: 25px;
+	width: 75px;
+	border-radius: 5px;
+	margin-top: 25px;
+}
+
+p {
+	color: white;
+}
+
+
+
+
+
+
+
+
+footer {
+	
+	background: linear-gradient(45deg, #3f87a6 0 50%, blue 50% 100%);
 }
