@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+}
+
+form
+{
+    font-family: Bitter;
+	color: white;
+    max-width: 500px;
+    margin: auto;
+    background-image: linear-gradient(45deg, skyblue 0 65%, purple 50% 100%);;
+}
+header
+{
+    background-color: skyblue;
+    color: purple;
+    height: 100px;
+    text-align: center;
+    padding-top: 25px;
+    font-size: small;
+    }
+   h2,
+   p
+   {
+       text-align: center;
+   }
+   p
+   {
+       padding-right: 10px;
+       padding-left: 10px;
+       padding-bottom: 20px;
+   }
+   .top-hr{
+       border-top: 5px solid black;
+   }
+   hr{
+       border-top: 2px solid black;
+   }
+   .top-hr,
+   hr{
+      margin: 5px 10px;
+   }
+   
+   fieldset
+   {
+    border: none;
+   }
+
+   legend {
+    font-size: 1.4em;
+    padding-bottom: 25px;
+   }
+   label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  input[type="zip"],
+  input[type="text"],
+  input[type="email"],
+  input[type="search"],
+  input[type="tel"],
+  textarea,
+  select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: rgb(235, 240, 241);
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    opacity: 0.5;
+  }
+  #zip{
+      width: 50%;
+  }
+  input[type="zip"] {
+      width: 50%;
+  }
+  .bottom-fieldset{
+      background-color: purple;
+  }
+  .newsletter{
+    padding-top: 50px;
+}
+  
+  fieldset p{
+      text-align: left;
+  }
+  .format{
+      margin-top: 30px;
+  }
+
+  input[type="checkbox"], 
+  input[type="radio"] 
+  {
+        float: left;
+        margin-right: 15px;
+  }
+  .topics
+  {
+    text-align: left;
+  }
+  button{
+    background-color: rgb(4, 206, 233);
+    color: white;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  .btn:hover {opacity: 1}
+  footer
+  {
+      text-align: center;
+      margin-top: 15px; 
+      background-color: rgb(208, 213, 218);     
+  }
+
+/*----------------------------------------------------
+            Pseudo-Elements
+----------------------------------------------------*/
+
+
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="search"]:focus,
+textarea:focus,
+select:focus,
+input[type="zip"]:focus
+
+{
+    transition: ease 3s;
+    border: 1px solid lightcoral;
+    background-color: lightsteelblue;
+    color: black;
+    opacity: 1;
+}
+::placeholder{
+    text-align: right;
+}
+
+  /*---------------------------------------------------
+            Media Query
+  ---------------------------------------------------*/
+
+  @media (min-width: 768px) {
+       form{
+           max-width: 768px;
+       }
+       header{
+           height: 50px;
+       }
+       h1{
+           font-size: large;
+          margin-top: -15px;
+       }
+       legend{
+           margin-bottom: 35px;
+       }
+      
+
+  input[type="zip"],
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  select {
+      display: block;
+      width: 575px;
+      float: right;
+      clear: both;
+     }
+    #zip {
+         width:25%;
+         margin-right: 390px;
+     }
+    .label{
+        float: left;
+        clear: both;
+        margin-bottom: -75px;
+    }
+    .bottom-hr{
+        display: block;
+        clear: both;
+    }
+}
