@@ -1,82 +1,86 @@
+    html {
+      box-sizing: border-box;
+      background: #ffc600;
+      font-family: 'helvetica neue';
+      font-size: 20px;
+      font-weight: 200;
+    }
+    
+    body {
+      margin: 0;
+    }
+    header{
+		height 100px;
+	}
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
 
-html { 
-  background: url(../images/massageTable.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+    .panels {
+      min-height: 100vh;
+      overflow: hidden;
+	  display: flex;
+    }
 
-body {
-	box-sizing: border-box;
-	text-align: center;
-	
-	/*linear-gradient(45deg, #3f87a6 0 50%, blue 50% 100%);*/
-	background: transparent;
-	height: 700px;
-	width:60%;
-	margin: auto;
-}
-header {
-	
-	height: 300px;
-	
-}
-img {
-	position: fixed;
-	left: 25px;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	border: 2px solid skyblue;
-}
-.main-nav {
-	position: sticky;
-    top: 0;
-   z-index: 100;
-	
-}
-main {
-	
-	color: purple;
-}
-ul {
-	background: url(../images/backgroundFlowers.jpg) no-repeat;
-	background-size:cover ;
-	height: 150px;
-	position: sticky;
-    top: 0;
-   z-index: 100;
-	border-radius: 7px;
-	display: flex;
-	flex-direction: columns;
-	justify-content: space-around;
-}
-ul li {
-	width: 100%;
-	margin-top: 50px;
-	position: sticky;
-    top: 0;
-   z-index: 100;
-}
-li {
-	list-style-type: none;
-	margin-left: -35px;
-	background-color: skyblue;
-	height: 25px;
-	
-	border-radius: 5px;
-	margin-top: 25px;
-	position: sticky;
-    top: 0;
-   z-index: 100;
-}
+    .panel {
+      background: #6B0F9C;
+      box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+      color: white;
+      text-align: center;
+      align-items: center;
+      /* Safari transitionend event.propertyName === flex */
+      /* Chrome + FF transitionend event.propertyName === flex-grow */
+      transition:
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        background 0.2s;
+      font-size: 20px;
+      background-size: cover;
+      background-position: center;
+	  
+	  flex: 1;
+	  justify-content: center;
+	  align-items: center;
+	  display: flex;
+	  /* vertically centers the items */
+	  flex-direction: column;
+    }
 
-p {
-	margin-top: 75px;
-	color: white;
-	font-size: 25px;
+    .panel1 { background-image:url(facial.jpg); }
+    .panel2 { background-image:url(backgroundFlowers.jpg); }
+    .panel3 { background-image:url(cupping.jpg); }
+    .panel4 { background-image:url(oilInHand.jpg); }
+    .panel5 { background-image:url(massageImg.jpg); }
 
-footer {
-	background-image: linear-gradient(45deg, #3f87a6 0 50%, blue 50% 100%);
-}
+    /* Flex Children */
+    .panel > * {
+      margin: 0;
+      width: 100%;
+      transition: transform 0.5s;
+	  
+	  flex: 1 0 auto;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+    }
+
+	.panel > *:first-child { transform: translateY(-100%); }
+	.panel.open-active > *:first-child { transform: translateY(0); }
+	.panel > *:last-child { transform: translateY( 100%); }
+	.panel.open-active > *:last-child { transform: translateY(0); }
+
+    .panel p {
+      text-transform: uppercase;
+      font-family: 'Amatic SC', cursive;
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+      font-size: 2em;
+    }
+    
+    .panel p:nth-child(2) {
+      font-size: 4em;
+    }
+
+    .panel.open {
+	  flex: 5;
+      font-size: 40px;
+    }
