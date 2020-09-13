@@ -194,7 +194,73 @@ nav ul li a:hover::after{
 /*-----End of Navigation Styles ----------------------------------------------*/
 main{
 	height:700px;
+	background: transparent;
 }
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 3fr 2fr; 
+}
+
+.grid-item {
+	
+	background-color: grey;
+}
+.item-1 {
+	background: url("../images/backgroundFlowers.jpg");
+}
+
+.item-2 {
+	background-image: url("../images/backgroundFlowers.jpg");
+}
+.item-3 {
+	background-image: url("../images/better.jpg");
+}
+.item-4 {
+	background-image: url("../images/healingArt.jpg");
+}
+.item-5 {
+	background-image: url("../images/anatomy.jpg");
+}
+.item-6 {
+	background-image: url("../images/appointments.jpg");
+}
+.item-7 {
+	background-image: url("../images/focusOnYou.jpg");
+}
+.item-8 {
+	background-image: url("../images/healingArt.jpg");
+}
+.item-9 {
+	background-image: url("../images/massageGiftCert.jpg");
+}
+
+.item-10 {
+	background-image: url("../images/prenatal.jpg");
+}
+.item-11 {
+	background-image: url("../images/takeCare.jpg");
+}
+.item-12 {
+	background-image: url("../images/selfLove.jpg");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
