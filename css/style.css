@@ -194,84 +194,83 @@ nav ul li a:hover::after{
 /*-----End of Navigation Styles ----------------------------------------------*/
 main{
 	height:700px;
-	background: blue;
+	background: white;
 }
 .grid-container {
 	display: grid;
-	grid-template-columns: 2fr 3fr; 
-	grid-template-rows: 4fr 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+	grid-template-rows:;
 	grid-gap: 10px 10px;
 	margin-top: 10px;
 }
 
 .grid-item {
-	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background-color: grey;
 }
 .item-1 {
-	background: url("../images/backgroundFlowers.jpg");
+	background: silver;
 }
 
 .item-2 {
 	background-color: grey;
 }
 .item-3 {
-	background-image: url("../images/better.jpg");
+	background: silver;
 }
 .item-4 {
 	background-color: grey;
 }
 .item-5 {
-	background-image: url("../images/anatomy.jpg");
+	background: silver;
 }
 .item-6 {
 	background-color: grey;
 }
 .item-7 {
-	background-image: url("../images/focusOnYou.jpg");
+	background: silver;
 }
 .item-8 {
 	background-color: grey;
 }
 
 .item-9 {
-	background-image: url("../images/massageGiftCert.jpg");
+	background: silver;
 }
 
 .item-10 {
 	background-color: grey;
 }
 .item-11 {
-	background-image: url("../images/takeCare.jpg");
+	background: silver;
 }
 .item-12 {
 	background-color: grey;
 }
 
-.grid {
+aside{
 	height: 700px;
-	display: grid;
-	grid-template-columns: 4fr 1fr;
-	grid-template-rows: 3fr 2fr;
 }
 
-.grid-item-1 {
-	background-color: black;
-	
-}
-.grid-item-2 {
-	background-color: skyblue;
-	
-}
-.grid-item-3 {
-	
-	background-color: white;
-}
-.grid-item-4 {
-	
+
+.photo-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+	grid-template-rows:;
+	grid-gap: 10px 10px;
+	margin-top: 10px;
+	}
+
+.photo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background-color: grey;
 }
-
 
 
 
