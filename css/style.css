@@ -59,6 +59,12 @@ nav{
 	transform: translateX(-100rem);
 	animation: slideIn .5s forwards;
 }
+.brand a {
+	color: green;
+}
+a {
+	color: green;
+}
 
 .brand span{
 	color: purple;
@@ -210,19 +216,21 @@ main{
 	justify-content: center;
 	align-items: center;
 	background-color: grey;
+	border: 1px solid silver;
+	padding: 15px;
 }
 .item-1 {
-	background: silver;
+	background: white;
 }
 
 .item-2 {
-	background-color: grey;
+	background: white;
 }
 .item-3 {
-	background: silver;
+	background: white;
 }
 .item-4 {
-	background-color: grey;
+	background-color: white;
 }
 .item-5 {
 	background: silver;
