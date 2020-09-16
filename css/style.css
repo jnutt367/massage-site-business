@@ -199,7 +199,7 @@ nav ul li a:hover::after{
 }
 /*-----End of Navigation Styles ----------------------------------------------*/
 main{
-	height:700px;
+	height:1200px;
 	background: white;
 }
 .grid-container {
@@ -233,30 +233,30 @@ main{
 	background-color: white;
 }
 .item-5 {
-	background: silver;
+	background: white;
 }
 .item-6 {
-	background-color: grey;
+	background-color: white;
 }
 .item-7 {
-	background: silver;
+	background: white;
 }
 .item-8 {
-	background-color: grey;
+	background-color: white;
 }
 
 .item-9 {
-	background: silver;
+	background: white;
 }
 
 .item-10 {
-	background-color: grey;
+	background-color: white;
 }
 .item-11 {
-	background: silver;
+	background: white;
 }
 .item-12 {
-	background-color: grey;
+	background-color: white;
 }
 
 aside{
