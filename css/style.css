@@ -219,6 +219,10 @@ main{
 	border: 1px solid silver;
 	padding: 15px;
 }
+.fairest {
+	height: 315px;
+	width: 225px;
+}
 .item-1 {
 	background: white;
 }
@@ -263,7 +267,11 @@ aside{
 	height: 700px;
 }
 
-
+figcaption {
+	padding-top:15px;
+	color: white;
+	font-size: 20px;
+}
 .photo-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
