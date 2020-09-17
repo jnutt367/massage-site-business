@@ -192,3 +192,27 @@ nav ul li a:hover::after{
   
 }
 /*-----End of Navigation Styles ----------------------------------------------*/
+aside{
+	height: 700px;
+}
+
+figcaption {
+	padding-top:15px;
+	color: white;
+	font-size: 20px;
+}
+.photo-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+	grid-template-rows:;
+	grid-gap: 10px 10px;
+	margin-top: 10px;
+	}
+
+.photo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: grey;
+}

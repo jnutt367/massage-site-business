@@ -7,7 +7,7 @@
 
 
 html { 
-  background: url(../images/massageTable.jpg) no-repeat center center fixed; 
+  background: url(../images/header.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,7 +21,7 @@ html {
 header{
 	width: 100%;
 	height: 100vh;
-	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.1)), url("../images/massageTable.jpg") center no-repeat;
+	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.1)), url("../images/header.jpg") center no-repeat;
 	background-size: cover;
 	position: relative;
     overflow: hidden;
@@ -199,7 +199,7 @@ nav ul li a:hover::after{
 }
 /*-----End of Navigation Styles ----------------------------------------------*/
 main{
-	height:1200px;
+	height:800px;
 	background: white;
 }
 .grid-container {
@@ -209,14 +209,15 @@ main{
 	grid-gap: 10px 10px;
 	margin-top: 10px;
 }
-
+.grid-container p {
+	font-size: 1.4em;
+}
 .grid-item {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: grey;
-	border: 1px solid silver;
 	padding: 15px;
 }
 .fairest {
@@ -263,30 +264,19 @@ main{
 	background-color: white;
 }
 
-aside{
-	height: 700px;
-}
-
-figcaption {
-	padding-top:15px;
+footer {
+	margin-top: 130px;
+	height: 300px;
+	background-color: black;
+	margin: auto;
 	color: white;
-	font-size: 20px;
+	text-align: center;
+	font-size: 1.4em;
 }
-.photo-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
-	grid-template-rows:;
-	grid-gap: 10px 10px;
-	margin-top: 10px;
-	}
+footer address {
+	margin-top: 35px;
+}
 
-.photo {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: grey;
-}
 
 
 
